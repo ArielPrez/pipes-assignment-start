@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ReversePipe implements PipeTransform {
 
   transform(value: string): any {
-    if (value.length) {
+    if (value) {
       const charArray = [];
       for (const i of value) {
         charArray.push(i);

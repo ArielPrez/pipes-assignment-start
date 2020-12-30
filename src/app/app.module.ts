@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ReversePipe } from './reverse.pipe';
+import { SortAlphabListPipe } from './sort-alpha-list.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReversePipe
+    ReversePipe,
+    SortAlphabListPipe
   ],
   imports: [
     BrowserModule,
