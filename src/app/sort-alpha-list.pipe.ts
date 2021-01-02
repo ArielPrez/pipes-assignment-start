@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'sortAlphabList'
+  name: 'sortAlphabList',
+  pure: false
 })
 export class SortAlphabListPipe implements PipeTransform {
 
@@ -22,6 +23,15 @@ export class SortAlphabListPipe implements PipeTransform {
         return 0;
       });
     }
+
+    //
+    // return value.sort((a, b) => {
+    //   if (a[serverName] > b[serverName]) {
+    //     return 1;
+    //   } else {
+    //     return -1;
+    //   }
+    // });
   }
 
 }
